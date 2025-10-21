@@ -1,7 +1,7 @@
 const express = require("express");
 let mysql = require("mysql2");
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
@@ -40,7 +40,7 @@ app.get('/api/mahasiswa', (req, res) => {
     });
 });
 
-app.post('/api/mahasiswa', (req, res) =>{
+app.post('/api/mahasiswa', (req, res) => {
     const {nama, alamat, agama} = req.body;
 
     if (!nama || !alamat || !agama) {
@@ -54,7 +54,7 @@ app.post('/api/mahasiswa', (req, res) =>{
                 console.error(err);
                 return res.status(500).json({ message: "Database Error"});
             }
-            req.status(201).json({ message: "User created successfully"});
+            res.status(201).json({ message: "User created successfully"});
         }
     );
 });
@@ -63,7 +63,7 @@ app.put('/api/mahasiswa/:id', (req, res) => {
     const userId = req.params.id;
     const { nama, alamat, agama } = req.body;
     db.query(
-        "UPDATE biodata SET nama = ? alamat = ?, agama = ? WHERE id = ?",
+        "UPDATE biodata SET nama = ?, alamat = ?, agama = ? WHERE id = ?",
         [nama, alamat, agama, userId], 
         (err, results) => {
             if (err) {
