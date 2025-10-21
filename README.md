@@ -3,3 +3,4 @@
 <img width="1920" height="1080" alt="ss_pws_POST" src="https://github.com/user-attachments/assets/350f8edd-5c9a-4cd3-9707-0d083b09f92c" />
 <img width="1920" height="1080" alt="ss_pws_put" src="https://github.com/user-attachments/assets/5ac6ebb5-7c3a-476a-a8aa-328a53b25ec7" />
 <img width="1920" height="1080" alt="ss_pws_delete" src="https://github.com/user-attachments/assets/71221dea-ceb5-4a97-bfbb-4a96899598f3" />
+<img width="1920" height="1080" alt="GET SETELAH DELETE" src="https://github.com/user-attachments/assets/aeb8acd9-b6df-40f9-86b7-da999280b334" />
